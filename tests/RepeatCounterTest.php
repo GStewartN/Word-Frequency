@@ -8,13 +8,13 @@
             //Arrange
             $test_RepeatCounter = new RepeatCounter;
             $input1 = "fe53#";
-            $input2 = "bfd437&";
+            $input_check = "bfd437&";
 
             //Act
-            $result = $test_RepeatCounter->countRepeats($input1, $input2);
+            $result = $test_RepeatCounter->countRepeats($input1, $input_check);
 
             //Assert
-            $this->assertEquals("Please enter letters only!", $result);
+            $this->assertEquals("Please enter letters only with no punctuation!", $result);
         }
     }
 ?>
