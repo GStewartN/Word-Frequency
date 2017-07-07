@@ -29,7 +29,7 @@ _The app will use PHPunit,  Silex, and Twig._
 * In Terminal, perform the following steps:
   * type 'cd desktop' and press enter
   * type 'git clone' then paste the repository link and press enter
-  * type 'cd WordFrequency' to access the path on your computer
+  * type 'cd Word-Frequency' to access the path on your computer
   * type 'composer install' in terminal to download dependencies
   * type 'cd web' to enter the web folder, then type 'php -S localhost:8000' to open local server
 * In your browser, enter 'localhost:8000' to view the webpage on your browser
@@ -51,8 +51,6 @@ _The app will use PHPunit,  Silex, and Twig._
 
 * _PHP_
 * _HTML_
-* _Bootstrap_
-*  _CSS_
 * _Silex_
 * _Twig_
 * _Composer_
