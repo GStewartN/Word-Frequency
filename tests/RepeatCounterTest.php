@@ -30,5 +30,19 @@
             //Assert
             $this->assertEquals(1, $result);
         }
+
+        function testCountRepeatsSingleWord()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input1 = "dog";
+            $input_check = "dog";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input1, $input_check);
+
+            //Assert
+            $this->assertEquals(0, $result);
+        }
     }
 ?>
