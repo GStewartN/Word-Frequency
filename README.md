@@ -22,7 +22,7 @@ _The app will use PHPunit,  Silex, and Twig._
 
 ## Setup/Installation
 
-* Open GitHub site on your browser: https://github.com/GStewartN/WordFrequency
+* Open GitHub site on your browser: https://github.com/GStewartN/Word-Frequency
 * Select the dropdown (green box) "Clone or download"
 * Copy the link for the GitHub repository
 * Open Terminal on your computer
