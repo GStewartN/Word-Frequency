@@ -42,7 +42,7 @@
             $result = $test_RepeatCounter->countRepeats($input1, $input_check);
 
             //Assert
-            $this->assertEquals(0, $result);
+            $this->assertEquals(1, $result);
         }
     }
 ?>
