@@ -11,5 +11,14 @@
         return $app["twig"]->render("word_freq.html.twig");
     });
 
+    $app->get("/counts", function() use ($app) {
+        $counter = new RepeatCounter();
+        $input1 = $_GET["input1"];
+        $input_check = $_GET["input_check"];
+        $results = $counter->countRepeats($input1, $input_check);
+
+        return $app["twig"]->render("counts.html.twig", array("word" => $input1, "sentence" => $input_check, "count" => $results));
+    });
+
     return $app;
 ?>
