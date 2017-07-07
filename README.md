@@ -40,12 +40,12 @@ _The app will use PHPunit,  Silex, and Twig._
 | Behavior | Input | Output |
 |----------|-------|--------|
 | User visits landing page, clicks submit button without entering anything into the form | Nothing but a submit button click | A small popup in the form field instructs user to enter information to continue |
-| User visits land page, facerolls the keyboard | Gibberish with a mix of letters, numbers, and special characters entered into the form fields, then submit button clicked | A new page displays with a message instructing the user to enter letters only |
 | User visits landing page, enters a different single letter in both form fields  | The letter "a" is entered in first field, and "b" in second, then submit button clicked | A new page displays the entered letters, and a message saying no matches were found |
 | User visits landing page, enters the same single letter into each form field  | The letter "a" is entered in first field, and "a" in second, then submit button clicked | A new page displays the entered letters, and a message saying one match was found
 | User visits landing page, enters a single multiple letter word into both fields  | The word "dog" is entered into both form fields then submitted | A new page displays the entered words, and a message saying one match was found
 | User visits landing page, enters a single multiple letter word into the first field, and several words into the next field | The word "dog" is entered into the first field, and "Dog Day Afternoon" into the second, then submitted | A new page displays the entered words, and a message saying one match was found
 | User visits landing page, enters a single multiple letter word into the first field, and several words into the next field | The word "dog" is entered into the first field, and "Its a dog eat dog world" into the second, then submitted | A new page displays the entered words, and a message saying two matches were found
+| User visits landing page, facerolls the keyboard | Gibberish with a mix of letters, numbers, and special characters entered into the form fields, then submit button clicked | Program will remove most non-alphabetic characters before checking, then display a new page with given inputs, and number of matches, if any |
 
 ## Technologies Used
 
