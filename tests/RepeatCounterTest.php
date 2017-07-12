@@ -3,7 +3,22 @@
 
     class RepeatCounterTest extends PHPUnit_Framework_TestCase
     {
-        function testCountRepeatsSingleLetter()
+
+      function testCountRepeatsSingleLetterNoMatch()
+      {
+          //Arrange
+          $test_RepeatCounter = new RepeatCounter;
+          $input1 = "a";
+          $input_check = "b";
+
+          //Act
+          $result = $test_RepeatCounter->countRepeats($input1, $input_check);
+
+          //Assert
+          $this->assertEquals(0, $result);
+      }
+
+        function testCountRepeatsSingleLetterMatch()
         {
             //Arrange
             $test_RepeatCounter = new RepeatCounter;
